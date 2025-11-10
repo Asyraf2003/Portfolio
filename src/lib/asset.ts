@@ -2,12 +2,21 @@ export function asset(path: string) {
   if (!path) return "";
   if (/^https?:\/\//i.test(path)) return path;
 
-  // BASE_URL sudah dijamin dikenali oleh TS sekarang
-  const base = import.meta.env.BASE_URL;
-    
-  // Pastikan path input tidak memiliki slash di depan untuk menghindari //
+  // Hapus garis miring berlebihan dari path input
   const cleanPath = String(path).replace(/^\/+/, ""); 
+  
+  // Tentukan Base URL
+  let basePrefix = '/'; // Default untuk local development (Vite dev server)
 
-  // Hasil: /Portfolio/assets/mountain-3.png
-  return `${base}${cleanPath}`;
+  // DETEKSI HARDCODE: Jika bukan development lokal, 
+  // asumsikan ini adalah deployment GitHub Pages di sub-directory '/Portfolio/'
+  // Kita cek keberadaan 'PROD' env variable, yang diatur oleh Vite saat build.
+  if (import.meta.env.PROD) {
+      // Hardcode Base URL untuk GitHub Pages (GANTIKAN DENGAN NAMA REPO ANDA JIKA BEDA)
+      basePrefix = '/Portfolio/';
+  }
+
+  // Gabungkan Base dengan path aset.
+  // Hasil yang diharapkan di Production: /Portfolio/assets/sky.jpg
+  return `${basePrefix}${cleanPath}`;
 }
