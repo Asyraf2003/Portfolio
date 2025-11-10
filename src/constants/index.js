@@ -12,28 +12,12 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/laravel-e-commerce",
     logo: "",
-    image: "/Portfolio/assets/projects/accessories.png",
+    image: "assets/projects/accessories.png",     // ← no leading slash, no /Portfolio
     tags: [
-      {
-        id: 1,
-        name: "Html",
-        path: "/Portfolio/assets/logos/html5.svg",
-      },
-      {
-        id: 2,
-        name: "Laravel",
-        path: "/Portfolio/assets/logos/laravel.svg",
-      },
-      {
-        id: 3,
-        name: "Midtrans",
-        path: "/Portfolio/assets/logos/midtrans.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/Portfolio/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "Html",        path: "assets/logos/html5.svg" },
+      { id: 2, name: "Laravel",     path: "assets/logos/laravel.svg" },
+      { id: 3, name: "Midtrans",    path: "assets/logos/midtrans.svg" },
+      { id: 4, name: "TailwindCSS", path: "assets/logos/tailwindcss.svg" },
     ],
   },
   {
@@ -47,33 +31,17 @@ export const myProjects = [
       "Integrated student registration workflow and tuition (SPP) transaction tracking with real-time validation.",
       "Added multilingual support (English & Indonesian) using Laravel localization features.",
       "Designed a clean and responsive interface with TailwindCSS, AlpineJS, and Mazer template for a modern school dashboard.",
-      "Containerized the entire environment using Docker for consistent local and production deployment."
+      "Containerized the entire environment using Docker for consistent local and production deployment.",
     ],
     href: "https://github.com/Asyraf2003/school-with-article",
     logo: "",
-    image: "/Portfolio/assets/projects/sekolah.png",
+    image: "assets/projects/sekolah.png",
     tags: [
-      {
-        id: 1,
-        name: "Laravel",
-        path: "/Portfolio/assets/logos/laravel.svg"
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "/Portfolio/assets/logos/tailwindcss.svg"
-      },
-      {
-        id: 3,
-        name: "AlpineJS",
-        path: "/Portfolio/assets/logos/alpine.js.svg"
-      },
-      {
-        id: 4,
-        name: "Docker",
-        path: "/Portfolio/assets/logos/docker.svg"
-      },
-    ]
+      { id: 1, name: "Laravel",     path: "assets/logos/laravel.svg" },
+      { id: 2, name: "TailwindCSS", path: "assets/logos/tailwindcss.svg" },
+      { id: 3, name: "AlpineJS",    path: "assets/logos/alpine.js.svg" },
+      { id: 4, name: "Docker",      path: "assets/logos/docker.svg" },
+    ],
   },
   {
     id: 3,
@@ -85,47 +53,23 @@ export const myProjects = [
       "Configured Alacritty, Neovim, and system-wide keybindings for a seamless keyboard-driven workflow.",
       "Implemented dynamic theming with live wallpapers, transparent terminals, and adaptive light/dark modes.",
       "Automated provisioning and environment synchronization via Git version control.",
-      "Optimized for developers who prioritize speed, minimalism, and total control over their Linux system."
+      "Optimized for developers who prioritize speed, minimalism, and total control over their Linux system.",
     ],
     href: "https://github.com/Asyraf2003/dotfiles",
     logo: "",
-    image: "/Portfolio/assets/projects/dotfiles.png",
+    image: "assets/projects/dotfiles.png",
     tags: [
-      {
-        id: 1,
-        name: "Arch Linux",
-        path: "/Portfolio/assets/logos/arch.svg"
-      },
-      {
-        id: 2,
-        name: "Alacritty",
-        path: "/Portfolio/assets/logos/alacritty.svg"
-      },
-      {
-        id: 3,
-        name: "Docker",
-        path: "/Portfolio/assets/logos/docker.svg"
-      }
-    ]
+      { id: 1, name: "Arch Linux", path: "assets/logos/arch.svg" },
+      { id: 2, name: "Alacritty",  path: "assets/logos/alacritty.svg" },
+      { id: 3, name: "Docker",     path: "assets/logos/docker.svg" },
+    ],
   },
 ];
 
 export const mySocials = [
-  {
-    name: "WhatsApp",
-    href: "https://wa.me/6287887681881",
-    icon: "assets/socials/whatsApp.svg",
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/",
-    icon: "assets/socials/linkedIn.svg",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/asyrafm1/",
-    icon: "assets/socials/instagram.svg",
-  },
+  { name: "WhatsApp",  href: "https://wa.me/6287887681881",                           icon: "assets/socials/whatsApp.svg" },
+  { name: "LinkedIn",  href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/", icon: "assets/socials/linkedIn.svg" },
+  { name: "Instagram", href: "https://www.instagram.com/asyrafm1/",                   icon: "assets/socials/instagram.svg" },
 ];
 
 export const experiences = [
