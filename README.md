@@ -3,7 +3,7 @@ echo '# 🚀 Full-Stack Cloud Engineer Portfolio
 
 A modern, responsive developer portfolio built with **React**, **Vite**, and **TailwindCSS**, showcasing my full-stack and cloud projects — from Laravel systems and Dockerized environments to AWS-integrated apps.
 
-![Portfolio Screenshot GitHub](public/assets/projects/home.png)
+![Portfolio Screenshot GitHub](./public/assets/projects/home.png)
 
 ---
 
