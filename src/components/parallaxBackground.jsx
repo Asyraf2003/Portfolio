@@ -1,44 +1,68 @@
-import React from "react";
-import { asset } from "../lib/asset"; // sesuaikan path jika filemu beda lokasi
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
-const BG = {
-  sky: asset("assets/sky.jpg"),
-  planets: asset("assets/planets.png"),
-  mountain3: asset("assets/mountain-3.png"),
-  mountain2: asset("assets/mountain-2.png"),
-  mountain1: asset("assets/mountain-1.png"),
+const ParallaxBackground = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useSpring(scrollYProgress, { damping: 50 });
+  const mountain3Y = useTransform(x, [0, 0.5], ["0%", "70%"]);
+  const planetsX = useTransform(x, [0, 0.5], ["0%", "-20%"]);
+  const mountain2Y = useTransform(x, [0, 0.5], ["0%", "30%"]);
+  const mountain1Y = useTransform(x, [0, 0.5], ["0%", "0%"]);
+
+  return (
+    <section className="absolute inset-0 bg-black/40">
+      <div className="relative h-screen overflow-y-hidden">
+        {/* Background Sky */}
+        <div
+          className="absolute inset-0 w-full h-screen -z-50"
+          style={{
+            backgroundImage: "url(/assets/sky.jpg)",
+            backgroundPosition: "bottom",
+            backgroundSize: "cover",
+          }}
+        />
+        {/* Mountain Layer 3 */}
+        <motion.div
+          className="absolute inset-0 -z-40"
+          style={{
+            backgroundImage: "url(/assets/mountain-3.png)",
+            backgroundPosition: "bottom",
+            backgroundSize: "cover",
+            y: mountain3Y,
+          }}
+        />
+        {/* Planets */}
+        <motion.div
+          className="absolute inset-0 -z-30"
+          style={{
+            backgroundImage: "url(/assets/planets.png)",
+            backgroundPosition: "bottom",
+            backgroundSize: "cover",
+            x: planetsX,
+          }}
+        />
+        {/* Mountain Layer 2 */}
+        <motion.div
+          className="absolute inset-0 -z-20"
+          style={{
+            backgroundImage: "url(/assets/mountain-2.png)",
+            backgroundPosition: "bottom",
+            backgroundSize: "cover",
+            y: mountain2Y,
+          }}
+        />
+        {/* Mountaine Layer 1 */}
+        <motion.div
+          className="absolute inset-0 -z-10"
+          style={{
+            backgroundImage: "url(/assets/mountain-1.png)",
+            backgroundPosition: "bottom",
+            backgroundSize: "cover",
+            y: mountain1Y,
+          }}
+        />
+      </div>
+    </section>
+  );
 };
 
-export default function ParallaxBackground() {
-  return (
-    <div className="absolute inset-0 -z-10 pointer-events-none">
-      {/* SKY */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${BG.sky})` }}
-      />
-      {/* MOUNTAIN 3 (paling belakang) */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-70"
-        style={{ backgroundImage: `url(${BG.mountain3})` }}
-      />
-      {/* PLANETS */}
-      <div
-        className="absolute inset-0 bg-contain bg-no-repeat bg-center opacity-80"
-        style={{ backgroundImage: `url(${BG.planets})` }}
-      />
-      {/* MOUNTAIN 2 */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-85"
-        style={{ backgroundImage: `url(${BG.mountain2})` }}
-      />
-      {/* MOUNTAIN 1 (paling depan) */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${BG.mountain1})` }}
-      />
-      {/* Fallback tipis */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/20" />
-    </div>
-  );
-}
+export default ParallaxBackground;
