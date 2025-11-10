@@ -39,33 +39,6 @@ const About = () => {
           >
             <p className="flex items-end text-4xl text-gray-900">ENGINEER WITH PRECISION</p>
 
-            {/* Principles & patterns */}
-            <Card
-              style={{ rotate: "-8deg", top: "12%", left: "8%" }}
-              text="Clean Architecture"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "6deg", top: "28%", left: "38%" }}
-              text="SOLID"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-18deg", top: "58%", left: "6%" }}
-              text="DDD"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "12deg", top: "60%", left: "45%" }}
-              text="TDD"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-14deg", top: "44%", left: "70%" }}
-              text="DevOps / CI·CD"
-              containerRef={grid2Container}
-            />
-
             {/* Tech logos (swap to your assets if needed) */}
             <Card
               style={{ rotate: "18deg", top: "6%", left: "65%" }}
