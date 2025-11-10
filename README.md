@@ -1,8 +1,9 @@
-# 🚀 3D Developer Portfolio
+# pastikan kamu di root folder repo
+echo '# 🚀 Full-Stack Cloud Engineer Portfolio
 
-A modern, animated 3D developer portfolio built with React, Three.js, TailwindCSS, and motion effects — designed to help you stand out and showcase your skills creatively.
+A modern, responsive developer portfolio built with **React**, **Vite**, and **TailwindCSS**, showcasing my full-stack and cloud projects — from Laravel systems and Dockerized environments to AWS-integrated apps.
 
-![3d Portfolio Screenshot GitHub](https://github.com/user-attachments/assets/9b0ed20e-074e-4f2a-81d8-20c9da751e9e)
+![Portfolio Screenshot GitHub](public/assets/projects/home.png)
 
 ---
 
@@ -21,96 +22,104 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 
 ## ✨ Features
 
-- 🔥 3D visuals powered by **React Three Fiber** and **Drei**
-- ⚡ Smooth transitions and scroll-based animations using **Framer Motion**
-- 🎨 Clean, responsive UI with **TailwindCSS**
-- 💌 Working contact form using **EmailJS**
-- 🧱 Beautiful UI enhancements with **Aceternity UI** and **Magic UI**
-- 🚀 Lightning-fast development with **Vite**
+- ⚙️ Built with **React + Vite** for lightning-fast performance  
+- 🎨 Fully responsive UI with **TailwindCSS**  
+- 💌 Working contact form powered by **EmailJS**  
+- ☁️ Cloud-ready workflow (Docker + AWS practices)  
+- 🧠 Organized and modular architecture for scalability  
+- 🪄 Smooth animations and transitions with **Framer Motion**  
 
 ---
 
 ## 🛠 Tech Stack
 
-| Tech              | Description                           |
-|-------------------|---------------------------------------|
-| React             | Front-end JavaScript library          |
-| Vite              | Fast bundler and dev environment      |
-| TailwindCSS       | Utility-first CSS framework           |
-| React Three Fiber | 3D rendering with Three.js in React   |
-| Drei              | Helpers and abstractions for R3F      |
-| Framer Motion     | Animation library for React           |
-| EmailJS           | Form handling and email integration   |
-| Aceternity UI     | Custom UI components                  |
-| Magic UI          | Prebuilt UI elements and design extras|
+| Tech              | Description                                |
+|-------------------|--------------------------------------------|
+| React             | Front-end JavaScript library               |
+| Vite              | Fast bundler and dev environment           |
+| TailwindCSS       | Utility-first CSS framework                |
+| Framer Motion     | Animation library for React                |
+| EmailJS           | Client-side email integration              |
+| Docker            | Containerization for dev/prod parity       |
+| Laravel (backend) | PHP framework for full-stack projects      |
+| AWS               | Cloud deployment & CI/CD experimentation   |
 
 ---
 
 ## 📁 Project Structure
 
-```bash
+\`\`\`bash
 ├── public/
-│   ├── assets/             # Images, textures, models
-│   ├── models/             # 3D Astronaut model
+│   ├── assets/             # Images, icons, and project screenshots
 │   └── vite.svg
 ├── src/
-│   ├── components/         # Reusable components
-│   ├── constants/          # Reusable datas
-│   ├── sections/           # Portfolio sections (Hero, About, etc.)
+│   ├── components/         # Reusable UI components
+│   ├── constants/          # Static data (projects, socials, etc.)
+│   ├── pages/              # About, Projects, Contact sections
+│   ├── config/             # EmailJS configuration
 │   ├── App.jsx             # Main app file
-│   ├── index.css           # Tailwind css
+│   ├── index.css           # Tailwind setup
 │   └── main.jsx            # Entry point
 ├── tailwind.config.js
 └── vite.config.js
-```
+\`\`\`
 
 ---
 
 ## 🚀 Getting Started
-1. Clone the Repository
-```bash
-git clone https://github.com/Ali-Sanati/Portfolio.git
-cd Portfolio
-```
-2. Install Dependencies
-```bash
-npm install
-```
-3. Run the Development Server
-```bash
-npm run dev
-```
-The app will be available at http://localhost:5173.
+
+1. **Clone the Repository**
+   \`\`\`bash
+   git clone https://github.com/Asyraf2003/Portfolio.git
+   cd Portfolio
+   \`\`\`
+
+2. **Install Dependencies**
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Run the Development Server**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+   Then open [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## 🔗 Assets
-Assets used in the project can be found [here](https://github.com/user-attachments/files/19820923/public.zip)
+
+All images and logos are stored locally under \`public/assets/\`.  
+Main screenshot used in this README: \`public/assets/projects/home.png\`
 
 ---
 
 ## 📬 Contact Me
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/ali.sanatidev/reels/) 
-[![Static Badge](https://img.shields.io/badge/Youtube-%23FF0033?style=flat&logo=youtube)](https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ali-sanati/) 
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-%2325D366.svg?logo=whatsapp&logoColor=white)](https://wa.me/6287887681881)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=instagram&logoColor=white)](https://www.instagram.com/asyrafm1/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asyraf-mubarak-4016a8305/)
 
 ---
 
 ## 💡 Suggestions or Feedback?
-Leave a comment on the [YouTube video](https://youtu.be/S9UQItTpwUQ) or open an issue here on GitHub.<br/>
-👉 What should I build next?
 
-- A beautiful Landing Page
-
-- A complete E-commerce site
-
-- A fun App Clone (YouTube, Netflix, etc.)
-
-Or another interactive Portfolio
-
-Let me know!
+Feel free to open an issue or reach out directly via the contact form on the website.  
+I’m constantly improving and open to collaboration — whether it’s about Laravel, Docker, or Cloud Engineering.
 
 ---
 
 ## ⭐ Like This Project?
-Star the repo and [subscribe](https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA??sub_confirmation=1) to the YouTube channel for more dev content!
+
+If you find this project inspiring or useful, give it a **⭐ star** on GitHub.  
+It helps others discover it and keeps me motivated to build more.
+
+---
+
+> Built with passion by **Asyraf Mubarak** — Full-Stack Cloud Engineer 🌩️  
+> _“Code with precision. Deploy with confidence.”_
+' > README.md
+
+git add README.md
+git commit -m "docs: add professional README for Portfolio"
+git push origin main
