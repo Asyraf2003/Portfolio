@@ -5,7 +5,27 @@ A modern, responsive developer portfolio built with **React**, **Vite**, and **T
 
 ![Portfolio Screenshot GitHub](./public/assets/projects/home.png)
 
+
 ---
+
+
+## 🌐 Live Demo
+
+
+
+Lihat langsung proyek yang sudah di-*deploy* di GitHub Pages:
+
+
+
+[![Deploy Status](https://github.com/Asyraf2003/Portfolio/actions/workflows/deploy.yml/badge.svg)](https://asyraf2003.github.io/Portfolio)
+
+
+
+[**Lihat Portfolio Live di sini**](https://asyraf2003.github.io/Portfolio)
+
+
+---
+
 
 ## 📚 Table of Contents
 
