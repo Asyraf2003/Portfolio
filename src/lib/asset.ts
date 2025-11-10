@@ -2,25 +2,38 @@ export function asset(path: string) {
   if (!path) return "";
   if (/^https?:\/\//i.test(path)) return path;
 
-  // Tentukan BASE_URL. Kita gunakan BASE_URL dari Vite sebagai default.
-  const base =
+  // 1. Dapatkan BASE_URL dari Vite. Ini harusnya "/Portfolio/"
+  const viteBase =
     (typeof import.meta !== "undefined" &&
       (import.meta as any)?.env?.BASE_URL) ||
     "/";
 
-  // Periksa apakah BASE_URL adalah root ('/') atau subpath ('/Portfolio/')
-  // Jika BASE_URL adalah '/Portfolio/' DAN path yang dipanggil masih relatif terhadap root ('/assets/...')
-  // kita paksa penambahan '/Portfolio/' di depan.
+  // 2. Bersihkan path input, hapus slash awal/akhir yang berlebihan.
+  let cleanPath = String(path).replace(/^\/+/, "").replace(/\/+$/, "");
 
-  let finalPath = String(path).replace(/^\/+/, ""); // Hapus '/' awal dari path aset
-
-  // Kita hardcode prefix '/Portfolio/' untuk memastikan aset dimuat dengan benar di GH Pages
-  // Karena semua aset yang bermasalah berada di subfolder 'assets'
-  if (base.includes("/Portfolio") && finalPath.startsWith("assets/")) {
-      // Jika BASE_URL mengandung /Portfolio, kita pastikan path hasilnya adalah /Portfolio/assets/...
-      return `/Portfolio/${finalPath}`;
-  }
+  // 3. Tentukan final base.
+  // Untuk GitHub Pages, kita paksa base menjadi '/Portfolio/' secara eksplisit
+  // jika kita tahu ini adalah build untuk sub-directory.
+  let finalBase = viteBase;
   
-  // Untuk kasus lokal (base='/') atau URL eksternal, kita biarkan logic awal
-  return `${base}${finalPath}`;
+  // Karena kita tahu BASE_URL adalah /Portfolio/ dan selalu gagal, 
+  // kita hardcode nilai ini jika BASE_URL ada (berarti bukan environment lokal)
+  if (viteBase.length > 1 && viteBase !== '/') {
+      finalBase = '/Portfolio/'; 
+  }
+
+  // 4. Gabungkan base dengan path. Pastikan BASE_URL selalu diakhiri / (jika bukan '/')
+  const basePrefix = finalBase.endsWith('/') ? finalBase : finalBase + '/';
+  
+  // Hapus slash di akhir path aset sebelum digabung.
+  // Kita pastikan BASE_URL sudah ditangani oleh Vite, tapi kita cek lagi:
+  
+  if (basePrefix === '/Portfolio/' && cleanPath.startsWith('assets/')) {
+      // Ini adalah skenario GitHub Pages. Pastikan hasilnya: /Portfolio/assets/...
+      // Kita hapus / di awal path jika ada (agar tidak jadi //assets)
+      return `${basePrefix}${cleanPath}`;
+  }
+
+  // Untuk local development (base='/') atau jika ada kasus lain
+  return `${basePrefix}${cleanPath}`;
 }
