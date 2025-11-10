@@ -67,9 +67,9 @@ export const myProjects = [
 ];
 
 export const mySocials = [
-  { name: "WhatsApp",  href: "https://wa.me/6287887681881",                           icon: "/Portfolio/assets/socials/whatsApp.svg" },
-  { name: "LinkedIn",  href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/", icon: "/Portfolio/assets/socials/linkedIn.svg" },
-  { name: "Instagram", href: "https://www.instagram.com/asyrafm1/",                   icon: "/Portfolio/assets/socials/instagram.svg" },
+  { name: "WhatsApp",  href: "https://wa.me/6287887681881",                           icon: "/assets/socials/whatsApp.svg" },
+  { name: "LinkedIn",  href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/", icon: "/assets/socials/linkedIn.svg" },
+  { name: "Instagram", href: "https://www.instagram.com/asyrafm1/",                   icon: "/assets/socials/instagram.svg" },
 ];
 
 export const experiences = [
