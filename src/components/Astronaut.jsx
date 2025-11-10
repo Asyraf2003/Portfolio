@@ -12,10 +12,7 @@ import { useMotionValue, useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 
 // Resolve model path correctly for GitHub Pages subpath (/Portfolio/)
-const MODEL_URL = new URL(
-  "models/tenhun_falling_spaceman_fanart.glb",
-  import.meta.env.BASE_URL
-).href;
+const MODEL_URL = `${import.meta.env.BASE_URL}models/tenhun_falling_spaceman_fanart.glb`;
 
 export function Astronaut(props) {
   const group = useRef();
