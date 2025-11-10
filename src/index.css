@@ -64,7 +64,7 @@ body {
 }
 
 .section-spacing {
-  @apply min-h-screen mt-20 md:mt-30;
+  @apply mt-16 md:mt-20;
 }
 
 .text-heading {
@@ -113,8 +113,12 @@ body {
   @apply row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
 
-.grid-default-color {
-  @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl;
+.grid-default-color { 
+  @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl; 
+}
+
+.grid-default-colorr {
+  @apply p-6 bg-gradient-to-b from-indigo-600 via-indigo-800 to-indigo-900 rounded-2xl;
 }
 
 .grid-special-color {

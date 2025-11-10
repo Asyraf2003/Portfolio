@@ -2,6 +2,12 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
+import {
+  EMAILJS_PUBLIC_KEY,
+  EMAILJS_SERVICE_ID,
+  EMAILJS_TEMPLATE_ID,
+} from "../config/emailjs";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -30,16 +36,16 @@ const Contact = () => {
     try {
       console.log("From submitted:", formData);
       await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
+        "service_rhvlq7q",
+        "template_zx4ov3v",
         {
           from_name: formData.name,
-          to_name: "Ali",
+          to_name: "Asyraf",
           from_email: formData.email,
-          to_email: "AliSanatiDev@gmail.com",
+          to_email: "asyrafwebsite@gmail.com",
           message: formData.message,
         },
-        "pn-Bw_mS1_QQdofuV"
+        "OIs_G9F8_LIKlELPk"
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
@@ -51,7 +57,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="relative flex items-center c-space section-spacing">
+    <section className="relative flex items-center c-space section-spacing" id="contact">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
@@ -64,8 +70,9 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
-            Whether you're loking to build a new website, improve your existing
-            platform, or bring a unique project to life, I'm here to help
+            Whether you're building a new application, modernizing your infrastructure, 
+            or scaling your business through the cloud, I deliver reliable, secure, and 
+            high-performance solutions tailored to your goals.
           </p>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
@@ -78,7 +85,7 @@ const Contact = () => {
               name="name"
               type="text"
               className="field-input field-input-focus"
-              placeholder="John Doe"
+              placeholder="Your name"
               autoComplete="name"
               value={formData.name}
               onChange={handleChange}
@@ -94,7 +101,7 @@ const Contact = () => {
               name="email"
               type="email"
               className="field-input field-input-focus"
-              placeholder="JohnDoe@email.com"
+              placeholder="example@gmail.com"
               autoComplete="email"
               value={formData.email}
               onChange={handleChange}

@@ -5,19 +5,19 @@ export function Frameworks() {
     "auth0",
     "blazor",
     "cplusplus",
-    "csharp",
+    "arch",
     "css3",
     "dotnet",
-    "dotnetcore",
+    "docker",
     "git",
     "html5",
     "javascript",
-    "microsoft",
+    "aws",
     "react",
     "sqlite",
     "tailwindcss",
     "vitejs",
-    "wordpress",
+    "laravel",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">

@@ -10,24 +10,24 @@ export const myProjects = [
       "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
       "Added payment systems, localization, and product filtering for functionality improvements.",
     ],
-    href: "",
+    href: "https://github.com/Asyraf2003/laravel-e-commerce",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/accessories.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Html",
+        path: "/assets/logos/html5.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Laravel",
+        path: "/assets/logos/laravel.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "Midtrans",
+        path: "/assets/logos/midtrans.svg",
       },
       {
         id: 4,
@@ -38,291 +38,186 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "School Management & Article Platform",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A comprehensive school management web application built with Laravel and Mazer, featuring multilingual content, article management, student registration, and secure payment control.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Developed a modular Laravel backend with best-practice security and role-based authentication for admins, teachers, and students.",
+      "Implemented a dynamic article system with categories, image uploads, and markdown support.",
+      "Integrated student registration workflow and tuition (SPP) transaction tracking with real-time validation.",
+      "Added multilingual support (English & Indonesian) using Laravel localization features.",
+      "Designed a clean and responsive interface with TailwindCSS, AlpineJS, and Mazer template for a modern school dashboard.",
+      "Containerized the entire environment using Docker for consistent local and production deployment."
     ],
-    href: "",
+    href: "https://github.com/Asyraf2003/school-with-article",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/sekolah.png",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Laravel",
+        path: "/assets/logos/laravel.svg"
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg"
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "AlpineJS",
+        path: "/assets/logos/alpine.js.svg"
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Docker",
+        path: "/assets/logos/docker.svg"
       },
-    ],
+    ]
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Minimalist Arch Linux Environment",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A fully customized and automated Arch Linux setup designed for performance, consistency, and productivity across development workflows.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Engineered a lightweight Openbox environment (~400MB idle) with custom scripts for VPN, MariaDB, Wi-Fi, and Docker management.",
+      "Configured Alacritty, Neovim, and system-wide keybindings for a seamless keyboard-driven workflow.",
+      "Implemented dynamic theming with live wallpapers, transparent terminals, and adaptive light/dark modes.",
+      "Automated provisioning and environment synchronization via Git version control.",
+      "Optimized for developers who prioritize speed, minimalism, and total control over their Linux system."
     ],
-    href: "",
+    href: "https://github.com/Asyraf2003/dotfiles",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/dotfiles.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Arch Linux",
+        path: "/assets/logos/arch.svg"
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "Alacritty",
+        path: "/assets/logos/alacritty.svg"
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
+        name: "Docker",
+        path: "/assets/logos/docker.svg"
+      }
+    ]
   },
 ];
 
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "",
+    href: "https://wa.me/6287887681881",
     icon: "/assets/socials/whatsApp.svg",
   },
   {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/asyrafm1/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Student & Open-Source Contributor",
+    job: "IDN | Learning & Portfolio Building",
+    date: "Aug 2024 – Present",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Started structured learning at IDN with a focus on Laravel, TailwindCSS, Docker, and AWS cloud fundamentals.",
+      "Actively contributing to open-source and maintaining multiple GitHub repositories since Nov 2024, with consistent commits and refactoring for clean architecture.",
+      "Built personal projects emphasizing CI/CD, containerized environments, and best practices in full-stack and cloud engineering.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Freelance Web Developer",
+    job: "Al Mustaqbal Malang (School Website)",
+    date: "Dec 2024 – Jul 2025",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Developed a full-featured school management system using Laravel, Mazer, TailwindCSS, and AlpineJS.",
+      "Implemented article management, student registration, and tuition (SPP) transaction control with secure validation and RBAC.",
+      "Added multilingual support (EN/ID) and containerized the deployment environment using Docker for consistent builds.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "Code Reviewer & UX QA",
+    job: "Project Safeguard",
+    date: "Jul 2025 – Aug 2025",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Performed systematic code reviews to maintain consistency, performance, and adherence to SOLID principles.",
+      "Tested and verified end-to-end functionality, focusing on usability, accessibility, and bug-free performance.",
+      "Delivered actionable reports highlighting code issues, UI/UX improvements, and input/output security recommendations.",
+    ],
+  },
+  {
+    title: "Intern",
+    job: "Diskominfo West Lombok Regency, NTB",
+    date: "Sep 2025 – Nov 2025",
+    contents: [
+      "Assisted in developing and maintaining internal government web applications using Laravel and MySQL.",
+      "Optimized backend logic, improved query performance, and contributed to API integrations for data dashboards.",
+      "Collaborated through Git workflow (branching, PR reviews) to ensure clean and traceable development practices.",
     ],
   },
 ];
 export const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
+    name: "Michael Tan",
+    username: "@mtan_devops",
+    body: "Asyraf delivered a full Laravel–AWS integration with flawless CI/CD pipelines. His precision and clean architecture mindset are world-class.",
+    img: "https://robohash.org/michael",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
+    name: "Rina Kusuma",
+    username: "@rina_frontend",
+    body: "The UI he built with Tailwind and AlpineJS is not only beautiful but lightning fast. You can feel the engineering discipline in every pixel.",
+    img: "https://robohash.org/rina",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
+    name: "Daniel Wong",
+    username: "@dw_architect",
+    body: "We collaborated on a Dockerized microservice project—his command of containers, automation, and scalability is outstanding.",
+    img: "https://robohash.org/daniel",
   },
   {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
+    name: "Sarah Lee",
+    username: "@slee_pm",
+    body: "Working with Asyraf is pure clarity. Every feature is documented, secure, and deploys like clockwork through AWS pipelines.",
+    img: "https://robohash.org/sarah",
   },
   {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
+    name: "Hafidz Ramadhan",
+    username: "@hafidz_backend",
+    body: "His code is clean, modular, and future-proof. The Laravel architecture he set up became our team's benchmark standard.",
+    img: "https://robohash.org/hafidz",
   },
   {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
+    name: "Liya Sri",
+    username: "@liya_design",
+    body: "He makes backend logic look like art. Even the dashboards he designs feel effortless to use. Precision meets creativity.",
+    img: "https://robohash.org/liya",
   },
   {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
+    name: "Ethan Zhao",
+    username: "@ez_aws",
+    body: "I’ve seen many developers, but Asyraf’s cloud automation mindset is rare. Every deployment is efficient, scalable, and secure.",
+    img: "https://robohash.org/ethan",
   },
   {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
+    name: "Nadia Chen",
+    username: "@nadia_ops",
+    body: "He built a monitoring system that cut our downtime by half. Truly an engineer who blends reliability with elegance.",
+    img: "https://robohash.org/nadia",
   },
 ];
+

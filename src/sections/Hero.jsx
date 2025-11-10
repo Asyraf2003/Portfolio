@@ -1,6 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
-import ParallaxBackground from "../components/ParallaxBackground";
+import ParallaxBackground from "../components/parallaxBackground";
 import { Astronaut } from "../components/Astronaut";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
@@ -11,7 +11,7 @@ import Loader from "../components/Loader";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space">
+    <section className="flex items-start justify-center min-h-screen overflow-hidden md:items-start md:justify-start c-space" id="home">
       <HeroText />
       <ParallaxBackground />
       <figure
