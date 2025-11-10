@@ -12,7 +12,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/laravel-e-commerce",
     logo: "",
-    image: "/assets/projects/accessories.png",     // ← no leading slash, no 
+    image: "assets/projects/accessories.png",     // ← no leading slash, no 
     tags: [
       { id: 1, name: "Html",        path: "/Portfolio/assets/logos/html5.svg" },
       { id: 2, name: "Laravel",     path: "/Portfolio/assets/logos/laravel.svg" },
@@ -35,7 +35,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/school-with-article",
     logo: "",
-    image: "/assets/projects/sekolah.png",
+    image: "assets/projects/sekolah.png",
     tags: [
       { id: 1, name: "Laravel",     path: "/Portfolio/assets/logos/laravel.svg" },
       { id: 2, name: "TailwindCSS", path: "/Portfolio/assets/logos/tailwindcss.svg" },
@@ -57,7 +57,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/dotfiles",
     logo: "",
-    image: "/assets/projects/dotfiles.png",
+    image: "assets/projects/dotfiles.png",
     tags: [
       { id: 1, name: "Arch Linux", path: "/Portfolio/assets/logos/arch.svg" },
       { id: 2, name: "Alacritty",  path: "/Portfolio/assets/logos/alacritty.svg" },
