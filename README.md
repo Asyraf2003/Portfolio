@@ -1,5 +1,4 @@
-# pastikan kamu di root folder repo
-echo '# 🚀 Full-Stack Cloud Engineer Portfolio
+# 🚀 Full-Stack Cloud Engineer Portfolio
 
 A modern, responsive developer portfolio built with **React**, **Vite**, and **TailwindCSS**, showcasing my full-stack and cloud projects — from Laravel systems and Dockerized environments to AWS-integrated apps.
 
