@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import { asset } from "../lib/asset";
+
 function Navigation() {
   return (
     <ul className="nav-ul">
@@ -43,7 +45,7 @@ const Navbar = () => {
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
             <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+              src={asset(isOpen ? "assets/close.svg" : "assets/menu.svg")}
               className="w-6 h-6"
               alt="toggle"
             />

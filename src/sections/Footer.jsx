@@ -1,4 +1,5 @@
 import { mySocials } from "../constants";
+import { asset } from "../lib/asset"; 
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label={social.name}
             >
-              <img src={social.icon} className="w-5 h-5" alt={social.name} />
+              <img src={asset(social.icon)} className="w-5 h-5" alt={social.name} />
             </a>
           ))}
         </div>

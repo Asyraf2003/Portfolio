@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import { asset } from "../lib/asset"; 
+
 const ProjectDetails = ({
   title,
   description,
@@ -20,9 +22,9 @@ const ProjectDetails = ({
           aria-label="Close project details"
           className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
         >
-          <img src="assets/close.svg" className="w-6 h-6" alt="" />
+          <img src={asset("assets/close.svg")} className="w-6 h-6" alt="close" />
         </button>
-        <img src={image} alt={title} className="w-full rounded-t-2xl" />
+        <img src={asset(image)} alt={title} className="w-full rounded-t-2xl" />
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
@@ -47,7 +49,7 @@ const ProjectDetails = ({
               className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
             >
               View Project
-              <img src="assets/arrow-up.svg" className="size-4" alt="" />
+              <img src={asset("assets/arrow-up.svg")} className="size-4" alt="open in new tab" />
             </a>
           </div>
         </div>

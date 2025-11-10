@@ -1,5 +1,5 @@
 import { OrbitingCircles } from "./OrbitingCircles";
-
+import { asset } from "../lib/asset";
 export function Frameworks() {
   const skills = [
     "auth0",
@@ -36,5 +36,5 @@ export function Frameworks() {
 }
 
 const Icon = ({ src }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+  <img src={asset(src)} className="duration-200 rounded-sm hover:scale-110" alt="" />
 );

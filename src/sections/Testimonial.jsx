@@ -1,6 +1,8 @@
 import { twMerge } from "tailwind-merge";
 import Marquee from "../components/Marquee";
 import { reviews } from "../constants";
+import { asset } from "../lib/asset";
+
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
@@ -17,7 +19,7 @@ const ReviewCard = ({ img, name, username, body }) => {
           width="32"
           height="32"
           alt=""
-          src={img}
+          src={asset(img)}
         />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium text-white">
