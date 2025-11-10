@@ -12,12 +12,12 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/laravel-e-commerce",
     logo: "",
-    image: "assets/projects/accessories.png",     // ← no leading slash, no /Portfolio
+    image: "/Portfolio/assets/projects/accessories.png",     // ← no leading slash, no /Portfolio
     tags: [
-      { id: 1, name: "Html",        path: "assets/logos/html5.svg" },
-      { id: 2, name: "Laravel",     path: "assets/logos/laravel.svg" },
-      { id: 3, name: "Midtrans",    path: "assets/logos/midtrans.svg" },
-      { id: 4, name: "TailwindCSS", path: "assets/logos/tailwindcss.svg" },
+      { id: 1, name: "Html",        path: "/Portfolio/assets/logos/html5.svg" },
+      { id: 2, name: "Laravel",     path: "/Portfolio/assets/logos/laravel.svg" },
+      { id: 3, name: "Midtrans",    path: "/Portfolio/assets/logos/midtrans.svg" },
+      { id: 4, name: "TailwindCSS", path: "/Portfolio/assets/logos/tailwindcss.svg" },
     ],
   },
   {
@@ -35,12 +35,12 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/school-with-article",
     logo: "",
-    image: "assets/projects/sekolah.png",
+    image: "/Portfolio/assets/projects/sekolah.png",
     tags: [
-      { id: 1, name: "Laravel",     path: "assets/logos/laravel.svg" },
-      { id: 2, name: "TailwindCSS", path: "assets/logos/tailwindcss.svg" },
-      { id: 3, name: "AlpineJS",    path: "assets/logos/alpine.js.svg" },
-      { id: 4, name: "Docker",      path: "assets/logos/docker.svg" },
+      { id: 1, name: "Laravel",     path: "/Portfolio/assets/logos/laravel.svg" },
+      { id: 2, name: "TailwindCSS", path: "/Portfolio/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "AlpineJS",    path: "/Portfolio/assets/logos/alpine.js.svg" },
+      { id: 4, name: "Docker",      path: "/Portfolio/assets/logos/docker.svg" },
     ],
   },
   {
@@ -57,19 +57,19 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/dotfiles",
     logo: "",
-    image: "assets/projects/dotfiles.png",
+    image: "/Portfolio/assets/projects/dotfiles.png",
     tags: [
-      { id: 1, name: "Arch Linux", path: "assets/logos/arch.svg" },
-      { id: 2, name: "Alacritty",  path: "assets/logos/alacritty.svg" },
-      { id: 3, name: "Docker",     path: "assets/logos/docker.svg" },
+      { id: 1, name: "Arch Linux", path: "/Portfolio/assets/logos/arch.svg" },
+      { id: 2, name: "Alacritty",  path: "/Portfolio/assets/logos/alacritty.svg" },
+      { id: 3, name: "Docker",     path: "/Portfolio/assets/logos/docker.svg" },
     ],
   },
 ];
 
 export const mySocials = [
-  { name: "WhatsApp",  href: "https://wa.me/6287887681881",                           icon: "assets/socials/whatsApp.svg" },
-  { name: "LinkedIn",  href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/", icon: "assets/socials/linkedIn.svg" },
-  { name: "Instagram", href: "https://www.instagram.com/asyrafm1/",                   icon: "assets/socials/instagram.svg" },
+  { name: "WhatsApp",  href: "https://wa.me/6287887681881",                           icon: "/Portfolio/assets/socials/whatsApp.svg" },
+  { name: "LinkedIn",  href: "https://www.linkedin.com/in/asyraf-mubarak-4016a8305/", icon: "/Portfolio/assets/socials/linkedIn.svg" },
+  { name: "Instagram", href: "https://www.instagram.com/asyrafm1/",                   icon: "/Portfolio/assets/socials/instagram.svg" },
 ];
 
 export const experiences = [
