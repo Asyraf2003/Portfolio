@@ -13,7 +13,7 @@ A modern, responsive developer portfolio built with **React**, **Vite**, and **T
 
 
 
-Lihat langsung proyek yang sudah di-*deploy* di GitHub Pages:
+View the project directly, deployed on GitHub Pages:
 
 
 
@@ -21,7 +21,7 @@ Lihat langsung proyek yang sudah di-*deploy* di GitHub Pages:
 
 
 
-[**Lihat Portfolio Live di sini**](https://asyraf2003.github.io/Portfolio)
+[**View the Live Portfolio here**](https://asyraf2003.github.io/Portfolio)
 
 
 ---
