@@ -65,23 +65,21 @@ View the project directly, deployed on GitHub Pages:
 
 ---
 
+
 ## 📁 Project Structure
 
-\`\`\`bash
-├── public/
-│   ├── assets/             # Images, icons, and project screenshots
-│   └── vite.svg
-├── src/
-│   ├── components/         # Reusable UI components
-│   ├── constants/          # Static data (projects, socials, etc.)
-│   ├── pages/              # About, Projects, Contact sections
-│   ├── config/             # EmailJS configuration
-│   ├── App.jsx             # Main app file
-│   ├── index.css           # Tailwind setup
-│   └── main.jsx            # Entry point
-├── tailwind.config.js
-└── vite.config.js
-\`\`\`
+This project utilizes an organized, standard Vite/React structure:
+
+* **public/**: Contains static assets that are copied directly to the build folder.
+    * `assets/`: Images, icons, and project screenshots.
+* **src/**: The main source code.
+    * `components/`: Reusable UI components.
+    * `constants/`: Static data (e.g., project lists or social links).
+    * `pages/`: Components for the main application sections (About, Projects, Contact).
+    * `config/`: External service configurations (e.g., EmailJS).
+    * `App.jsx`, `main.jsx`, `index.css`.
+* `tailwind.config.js`: Tailwind CSS configuration.
+* `vite.config.js`: Vite bundler configuration.
 
 ---
 
