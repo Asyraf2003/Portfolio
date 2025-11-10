@@ -12,7 +12,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/laravel-e-commerce",
     logo: "",
-    image: "/assets/projects/accessories.png",
+    image: "/Portfolio/assets/projects/accessories.png",
     tags: [
       {
         id: 1,
@@ -51,7 +51,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/school-with-article",
     logo: "",
-    image: "/assets/projects/sekolah.png",
+    image: "/Portfolio/assets/projects/sekolah.png",
     tags: [
       {
         id: 1,
@@ -89,7 +89,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Asyraf2003/dotfiles",
     logo: "",
-    image: "/assets/projects/dotfiles.png",
+    image: "/Portfolio/assets/projects/dotfiles.png",
     tags: [
       {
         id: 1,
