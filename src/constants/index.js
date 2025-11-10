@@ -146,9 +146,9 @@ export const reviews = [
     img: "https://robohash.org/hafidz",
   },
   {
-    name: "Liya Sri",
-    username: "@liya_design",
-    body: "He makes backend logic look like art. Even the dashboards he designs feel effortless to use. Precision meets creativity.",
+    name: "Enliani Sri",
+    username: "@liya_cantik_imut",
+    body: "The way he builds things always steals my breath a little. His dashboards feel soft to use, and somehow they make my heart feel the same way.",
     img: "https://robohash.org/liya",
   },
   {
